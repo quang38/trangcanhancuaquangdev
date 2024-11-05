@@ -19,7 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('DISCORD').addEventListener('click', function (event) {
         event.preventDefault();
-        window.location.href = 'https://discord.gg/YccapeYbmH'; // Chuyển hướng đến Discord
+        //window.location.href = 'https://discord.gg/YccapeYbmH'; // Chuyển hướng đến Discord
+                window.location.href = './nolink/nolink.html'; // Chuyển hướng đến Facebook
+
     });
     document.getElementById('TIKTOK').addEventListener('click', function (event) {
         event.preventDefault();
