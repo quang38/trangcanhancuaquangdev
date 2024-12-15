@@ -13,15 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (Array.isArray(data.videos) && data.videos.length > 0) {
                 videoGallery.innerHTML = data.videos
                     .map(video => {
-                        // Kiểm tra URL có hợp lệ không
-                        if (video.url) {
-                            return `
-                                <div class="video-item">
-                                    <iframe src="${video.url}" frameborder="0" allowfullscreen></iframe>
-                                </div>`;
-                        } else {
-                            return `<p>URL video không hợp lệ.</p>`;
-                        }
+                        return `
+                            <div class="video-item">
+                                <iframe src="${video.url}" frameborder="0" allowfullscreen></iframe>
+                            </div>`;
                     })
                     .join('');
             } else {
